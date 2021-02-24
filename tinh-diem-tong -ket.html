@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Tính điểm đại học khối D</h1>
+Nhập vào điểm toán <input type="text" id="diemtoan"> <br/>
+Nhập vào điểm văn  <input type="text" id="diemvan"> <br/>
+Nhập vào điểm anh  <input type="text" id="diemanh"> <br/>
+<select id="diemnguyenvong">
+    <option>Khu vực 1</option>
+    <option>Khu vực 2</option>
+    <option>Khu vực 3</option>
+    <option>Khu vực 4</option>
+</select>
+<button onclick="tinh()">Tính điẻm</button> <br/>
+Kết quả là: <span id="diemtong1"></span>
+ <script>
+     function tinh() {
+         let diemtoan1 = Number(document.getElementById("diemtoan").value);
+         let diemvan1 = Number(document.getElementById("diemvan").value);
+         let diemanh1 = Number(document.getElementById("diemanh").value);
+         let khuvuc = document.getElementById("diemnguyenvong").value;
+         let diemkv = 0;
+         switch (khuvuc) {
+             case "Khu vực 1":
+                 diemkv = 0.75
+                 break
+             case "Khu vực 2":
+                 diemkv = 0.5
+                 break
+             case "Khu vực 3":
+                 diemkv = 0.25
+                 break
+             case "Khu vực 4":
+                 diemkv = 0
+         }
+         let diemtong1 = diemtoan1 + diemvan1 + diemanh1 + diemkv;
+         document.getElementById("diemtong1").innerHTML=diemtong1;
+     }
+ </script>
+</body>
+
+</html>

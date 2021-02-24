@@ -1,0 +1,49 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    tiếng anh<input id ="ta"/><br/>
+    <button type="button" onclick="dich()">dịch</button><br>
+    <span> tiếng việt:</span> <span id="kq"></span>
+    <Script>
+        function dich(){
+            let dem=0;
+            let nhap_ten_tieng_anh=(document.getElementById("ta").value);
+            let tieng_anh =["helo","goodbye","coputer"," name"] ;
+       let tieng_viet =[ " xin chào"," tạm biệt","mấy tính","tên"];
+       for (let i=0;i< tieng_anh.length;i++)
+        {
+        if (tieng_anh[i]===nhap_ten_tieng_anh){
+            document.getElementById("kq").innerHTML=tieng_viet[i];
+            console.log(i);
+            break;
+        }
+        dem++;
+       }
+       if ( dem>tieng_anh.length){
+           document.getElementById("kq").innerHTML="không tìm thấy";
+       }
+        }
+            
+    </Script>
+</body>
+</html>
+           
+       
+        
+           
+           
+           
+       
+       
+
+       
+
+       
+        
+       
+ 

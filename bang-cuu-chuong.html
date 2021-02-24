@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>
+        bảng cửu chương
+    </title>
+    
+    <body>
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+       
+        <script>
+             document.write('<table> border="1">');
+            for (let i=2;i<10;i++){
+                document.write("<tr>");
+                for(let j=1;j<10;j++){
+                    tich=i*j;
+                    
+                    document.write("<td>");
+                    document.write( i+'*'+ j+'='+tich+'<br>');
+                    document.write("</td>");
+                }
+                document.write("</tr>");
+            }
+            document.write("</table>");
+        </script>
+    </body>
+</head>
+</html>

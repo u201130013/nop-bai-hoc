@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <p id="cau_hoi">HTML là viết tắt của từ gì?</p>
+    <input type="radio" name="tra_loi" id="a" /> <span id="dap_an_a">Hyper Text Markup Language</span><br/>
+    <input type="radio" name="tra_loi" id="b" /> <span id="dap_an_b">Hyperlinks and Text Markup Language</span> <br/>
+    <input type="radio" name="tra_loi" id="c" /> <span id="dap_an_c">Home Tool Markup Language</span> <br/>
+    <input type="radio" name="tra_loi" id="d" /> <span id="dap_an_d">Nothing</span> <br/>
+
+    <button onclick="hien_thi_cau_tiep_theo()">Câu tiếp theo</button>
+    <script>
+
+        let cau_hoi_hien_tai = 1;
+        let diem_so = 0;
+
+        let cau_hoi = document.getElementById("cau_hoi");
+        let dap_an_a = document.getElementById("dap_an_a");
+        let dap_an_b = document.getElementById("dap_an_b");
+        let dap_an_c = document.getElementById("dap_an_c");
+        let dap_an_d = document.getElementById("dap_an_d");
+
+
+        function hien_thi_cau_tiep_theo() {
+
+            let a = document.getElementById("a");
+            let b = document.getElementById("b");
+            let c = document.getElementById("c");
+            let d = document.getElementById("d");
+
+            
+
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,43 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+năm dương lich:
+<input type="tex" id="năm dương lich">
+<button type="button"onclick="can chi()"> xem năm âm lịch:</button>
+</button>
+<script>
+    function canchi(){
+        let nam=Number(document.getElementById("nam duong lịch"). value);
+        let can=nam%10;
+        let chi = nam%12;
+        let can1=["canh","tân","nhâm","quý","giáp","ất","bính","đinh","mậu","kỷ"];
+        let chi1=["tý","sửu","dần","mão","thìn","tỵ","ngọ","mùi","thân","dậu","tuất","hợi"];
+        document.write( "năm âm lịch là:"+can1[can]+""+chi1[can]);
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

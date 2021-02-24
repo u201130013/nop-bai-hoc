@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+     <html lang="en">
+         <head></head>
+             <body>   
+            <canvas id="game_screen" width="400" height="200" style="border: 1px solid #f000f0;"></canvas>
+        
+            <script>
+                let pos=90;
+                function drawcircle(){
+                let myCanvas=document.getElementById("game_screen");
+                let context= myCanvas.getcontext("2d");
+
+                context.clearRect(0,0,400,200);
+                context.beginpath();
+                context.arc(pos,50,45,0,2 *math.Pi);
+
+                context.fillstyle="blue";
+                context.fill();
+                context.stroke();
+                }
+                function movecircle(){
+                    pos +=10;
+                    if(pos-400){pos=90}
+                    drawcircle();
+                   console.log(pos);
+                    
+                }
+                setInterval(movecircle,200);
+                // ve mot dương thang
+                // context.moveto(0,0);
+                // context.ff
+            </script>
+             </body>
+     </html>

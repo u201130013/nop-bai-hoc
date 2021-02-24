@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>in dãy fibonacci</title>
+</head>
+<body>
+<script>
+    //1,2,3,5,8...
+    let count=0;
+     let Number_1=1;
+     let Number_2=1;
+
+     while (count<5){
+         let next_fibonacci = Number_1+ Number_2;
+         document.write(next_fibonacci +",");
+         Number_1=Number_2;
+         Number_2=next_fibonacci;
+         count++;
+     }
+     </script>
+     </body>
+     </html>
